@@ -605,10 +605,10 @@ body {
     position: fixed;
     background: rgba(0, 0, 0, 0.35);
     z-index: 9999;
-    top: 20%;
-    right: 5%;
-    left: 5%;
-    bottom: 20%;
+    top: 12%;
+    right: 4%;
+    left: 4%;
+    bottom: 25%;
     color: white;
     flex-direction: column;
     padding: 10px 20px;
