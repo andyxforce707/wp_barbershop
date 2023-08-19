@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WP Barbershop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h2>WP Barbershop</h2>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li id="register">
+          Register
+          <!-- DOM -->
+          <div class="register"><a target="_blank" href="login.html">Login</a><a target="_blank" href="signup.html">Sign Up</a></div>
+          <!-- -->
+        </li>
+      </ul>
+
+      <div class="hamburger">
+        <img id="hamburger" src="icon/icon-hamburger.png" width="25" height="25" alt="" />
+      </div>
+    </div>
+
+    <!-- DOM -->
+    <div class="list" id="sidebar">
+      <h3>Sidebar</h3>
+      <ul>
+        <li><img src="icon/icon-home.png" width="20" height="20" alt="" /><a href="#home">Home</a></li>
+        <li><img src="icon/icon-love-white.png" width="20" height="20" alt="" /><a href="#services">Services</a></li>
+        <li><img src="icon/icon-unlock.png" width="20" height="20" alt="" /><a href="#about-us">About Us</a></li>
+        <li><img src="icon/icon-phone.png" width="20" height="20" alt="" /><a href="#contact">Contact</a></li>
+        <li><img src="icon/icon-android.png" width="20" height="20" alt="" /><a href="login.html">Login</a></li>
+        <li><img src="icon/icon-code.png" width="20" height="20" alt="" /><a href="login.html">Sign Up</a></li>
+      </ul>
+    </div>
+    <!-- DOM -->
+
+    <div class="image" id="home">
+      <img src="asset/wp-bg.jpg" alt="" />
+    </div>
+
+    <div class="services" id="services">
+      <h3>Services</h3>
+      <div class="services-wrapper">
+        <div class="services-inside">
+          <img src="asset/haircut.jpg" alt="" />
+          <h4>Haircut</h4>
+          <label for="">Rp. 15.000,-</label>
+        </div>
+
+        <div class="services-inside">
+          <img src="asset/shave.jpg" alt="" />
+          <h4>Shave</h4>
+          <label for="">Rp. 5.000,-</label>
+        </div>
+
+        <div class="services-inside">
+          <img src="asset/creambath.jpg" alt="" />
+          <h4>Creambath</h4>
+          <label for="">Rp. 15.000,-</label>
+        </div>
+
+        <div class="services-inside">
+          <img src="asset/pomade.jpg" alt="" />
+          <h4>Pomade</h4>
+          <label for="">Rp. 35.000,-</label>
+        </div>
+
+        <div class="services-inside">
+          <img src="asset/hairtonic.jpg" alt="" />
+          <h4>Hairtonic</h4>
+          <label for="">Rp. 12.000,-</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="photo">
+      <h3>Our Photo</h3>
+      <div class="photo-wrapper">
+        <img src="asset/wp-1.jpg" alt="" />
+        <img src="asset/wp-2.jpg" alt="" />
+        <img src="asset/wp-3.jpg" alt="" />
+        <img src="asset/wp-4.jpg" alt="" />
+        <img src="asset/wp-5.jpg" alt="" />
+        <img src="asset/wp-6.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="about-us" id="about-us">
+      <h3>About</h3>
+      <p><span>K</span>ami merupakan salah satu Barbershop yg berlokasi di Karanganyar. Mutu kami adalah menjadi barbershop yg berkualitas dengan harga yang ramah di kantong, tentunya dengan kualitas maksimal.</p>
+      <p>Alamat lengkap kami :</p>
+      <code>WP Barbershop, Ngemplak, Suruh, Kec. Tasikmadu, Kab. Karanganyar, Prov. Jawa Tengah</code>
+    </div>
+
+    <div class="contact" id="contact">
+      <h3>Contact Us</h3>
+      <ul>
+        <li><img src="icon/icon-instagram.png" width="22" height="22" alt="" /></li>
+        <li><img src="icon/icon-facebook.png" width="22" height="22" alt="" /></li>
+        <li><img src="icon/icon-phone.png" width="22" height="22" alt="" /></li>
+        <li><img src="icon/icon-youtube-white.png" width="22" height="22" alt="" /></li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <h4>WP Barbershop</h4>
+      <p>A Website created by <a href="https://www.instagram.com/andyxforce">@andyxforce</a></p>
+      <p>All right reserved 2023</p>
+    </div>
+
+    <!-- DOM Modal Box -->
+    <!-- haircut -->
+    <div class="modal">
+      <h2>Haircut</h2>
+      <div class="box">
+        <span class="close"><img src="icon/icon-back3.png" width="25" height="25" alt="" /></span>
+        <img src="asset/haircut.jpg" width="300" height="300" alt="" />
+        <p>Model dan jenis haircut apapun, sudah termasuk keramas dan condisioner.</p>
+      </div>
+      <h3>Rp.15.000,-</h3>
+    </div>
+
+    <!-- Shave -->
+    <div class="modal-shave">
+      <h2>Shave</h2>
+      <div class="box">
+        <span class="close"><img src="icon/icon-back3.png" width="25" height="25" alt="" /></span>
+        <img src="asset/shave.jpg" width="300" height="300" alt="" />
+        <p>Shave menggunakan silet sekali pakai, agar terjamin kebersihannya.</p>
+      </div>
+      <h3>Rp.5.000,-</h3>
+    </div>
+
+    <!-- Creambath -->
+    <div class="modal-creambath">
+      <h2>Creambath</h2>
+      <div class="box">
+        <span class="close"><img src="icon/icon-back3.png" width="25" height="25" alt="" /></span>
+        <img src="asset/creambath.jpg" width="300" height="300" alt="" />
+        <p>Pendiaman cream pada rambut guna menutrisi dan mencegah kerusakan rambut.</p>
+      </div>
+      <h3>Rp.15.000,-</h3>
+    </div>
+
+    <!-- -->
+
+    <script src="app.js"></script>
+  </body>
+</html>

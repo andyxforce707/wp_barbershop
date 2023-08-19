@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: arial;
+      }
+      body {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        background: rgba(245, 245, 245, 1);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url('asset/wp-bg.jpg') no-repeat center;
+        background-size: 50%;
+      }
+
+      .main {
+        padding: 10px 20px;
+        background: linear-gradient(to top right, rgba(0, 0, 0, 0.25), rgba(215, 215, 215, 0.3));
+        backdrop-filter: blur(20px);
+        width: 25%;
+        border-radius: 7px;
+      }
+      .main h2 {
+        text-align: center;
+        margin-bottom: 35px;
+        color: #fff;
+      }
+
+      .inputBox {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px;
+      }
+      .inputBox input {
+        padding: 5px 10px;
+        outline: none;
+      }
+      .inputBox label {
+        color: white;
+      }
+      .inputBox.register {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+      }
+      .inputBox.register p {
+        font-size: 0.85em;
+      }
+      .inputBox.register a {
+        font-size: 0.8em;
+      }
+      .inputBox button {
+        padding: 5px 10px;
+        margin-top: 20px;
+        letter-spacing: 0.02em;
+        cursor: pointer;
+        font-size: 1.2em;
+        background-color: transparent;
+        border: none;
+        transition: ease-in-out 0.4s;
+        border: 1px solid #fff;
+        color: white;
+      }
+
+      .inputBox button:hover {
+        box-shadow: 0 0 10px white, 0 0 30px white, 0 0 70px white;
+        background-color: white;
+        color: #111;
+      }
+
+      /* Responsif */
+      @media only screen and (max-width: 600px) {
+        .main {
+          width: 70%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h2>Sign Up</h2>
+      <div class="inputBox">
+        <label for="">Username : </label>
+        <input type="text" required />
+      </div>
+      <div class="inputBox">
+        <label for="">Password : </label>
+        <input type="password" required />
+      </div>
+      <div class="inputBox">
+        <label for="">Confirm Password : </label>
+        <input type="password" required />
+      </div>
+      <div class="inputBox">
+        <label for="">Email : </label>
+        <input type="password" required />
+      </div>
+      <div class="inputBox register">
+        <p>Already a member ?</p>
+        <a href="login.html">Log In</a>
+      </div>
+      <div class="inputBox">
+        <button type="submit">Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>
